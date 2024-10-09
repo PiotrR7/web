@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ros-Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/web-logo.png">
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+    
+    <!-- menu -->
+    <link rel="stylesheet" href="menu\style.css">
+    <script src="menu\script.js" defer></script>
+
+    <!-- slider -->
+    <link rel="stylesheet" href="slider\style.css">
+    <script src="slider\script.js"></script>
+
+    <!-- blocks -->
+    <script src="bloki\script.js"></script>
+    <link rel="stylesheet" href="bloki\style.css">
+
+    <!-- about us -->
+    <link rel="stylesheet" href="about_us/style.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    
+    <div class="header">
+        <img src="images\logo.png">
+        <h1>ROS-TECH</h1>
+    </div>
+    <div class="main">
+        <div class="main_header">
+            <h1>Your best choice for home renovation</h1>
+            <h2>Exceptional home improvements & maintenance</h2>
+        </div>
+        <div class="menu">
+            <button class="menu_button mbtn1" style="width: 15%;" onclick="Main(mBtn1)">
+                <span class="material-symbols-outlined">help</span>
+                <p>About Us</p>
+            </button>
+            <button class="menu_button mbtn2" onclick="Main(mBtn2)">
+                <span class="material-symbols-outlined">plumbing</span>
+                <p>Services</p>
+            </button>
+            <button class="menu_button mbtn3" onclick="Main(mBtn3)">
+                <span class="material-symbols-outlined">category</span>
+                <p>Projects</p>
+            </button>
+            <button class="menu_button">
+                <span class="material-symbols-outlined" onclick="#">image</span>
+                <p>Gallery</p>
+            </button>
+            <button class="menu_button">
+                <span class="material-symbols-outlined" onclick="#">call</span>
+                <p>Contact</p>
+            </button>
+        </div>
+        
+        <div class="about-us-box">
+            <h1>WHY CHOOSE ROS-TECH?</h1>
+            <p>
+                <b>Many years of experience</b> allow us to implement many projects, we are well-positioned to give you <b>the best possible workmanship at the best possible price</b>.
+                We take great pride in delivering exceptional levels of customer service and workmanship to all of our customers. Because we believe in going the extra mile
+                for our clients, you can look forward to the completion of your project in a timely and stress-free manner.
+                <b>Call us today to book your free quote.</b> 
+                <br><br><b>You'll Be Glad You Did!</b>
+            </p>
+        </div>
+        
+        <div class="slider-main"></div>
+        
+        <div class="content"></div>
+
+
+    </div>
+    <footer>
+                <ol>
+                    <li style="margin-bottom: 50px;"><h1>Links</h1></li>
+                    <li><span class="material-symbols-outlined">link</span><b>Facebook: </b></li>
+                    <li><span class="material-symbols-outlined">person</span><b>WebMaster:</b> <a href="https://github.com/PiotrR7" style="text-decoration: none; color: white;">PiotrR7</a></li>
+                </ol>
+                <ol>
+                    <li style="margin-bottom: 50px;"><h1>Contact</h1></li>
+                    <li><span class="material-symbols-outlined">phone</span><b>TEL:</b> 07809893586</li>
+                    <li><span class="material-symbols-outlined">mail</span><b>E-mail:</b> michal.rosiek@ros-tech.co.uk</li>
+                </ol>
+                <ol>
+                    <li style="margin-bottom: 50px;"><h1>Adress</h1></li>
+                    <li>Peterborough PE2 5NN</li>
+                    <li>78 Saltmarsh Orton Malborne</li>
+                </ol>
+    </footer>
+
+    <script>
+
+        CreateBlock('./images/panel-1.jpg', 'Lorem ipsum dolor sit');
+        CreateBlock('./images/panel-2.jpg', 'Lorem ipsum dolor sit');
+        CreateBlock('./images/panel-3.jpg', 'Lorem ipsum dolor sit');
+        CreateBlock('./images/panel-4.jpg', 'Lorem ipsum dolor sit');
+        CreateBlock('./images/panel-5.jpg', 'Lorem ipsum dolor sit');
+        CreateBlock('./images/panel-6.jpg', 'Lorem ipsum dolor sit');
+        CreateBlock('./images/panel-7.jpg', 'Lorem ipsum dolor sit');
+        
+
+        CreateSlider();
+    </script>
+
+</body>
+</html>
