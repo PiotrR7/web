@@ -1,13 +1,13 @@
 .menu {
-    height: 70px;
+    /* height: 70px; */
     width: 70%;
     
     border-radius: 99px;
-    padding: 10px 9px;
+    padding: 10px 10px;
     gap: 10px;
 
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     background-color: white;
@@ -16,17 +16,18 @@
     box-shadow: 1px 0px 31px -21px rgba(66, 68, 90, 1);
 }
 .menu_button {
-    height: 90%;
-    width: 17%;
+    width: 22%;
 
     background-color: white;
     color: gray;
     border-radius: 27px;
     gap: 5px;
-    padding: 20px;
+    padding: 1.5%;
+    margin: 0 3px;
 
     font-family: "Mulish";
     font-weight: bold;
+    /* font-size: 1vw; */
 
     display: flex;
     flex-direction: row;
@@ -42,11 +43,13 @@
         flex-direction: column;
 
         height: fit-content;
-        min-width: 30%;
+        width: 100%;
         border-radius: 24px;
     }
     .menu_button {
         width: 100%;
         border-radius: 16px;
+
+        font-size: 1vw;
     }
 }

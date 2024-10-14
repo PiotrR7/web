@@ -7,17 +7,18 @@ class MenuButton {
 }
 
 const mBtn1 = new MenuButton(".mbtn1", ".about-us-box", "flex");
-const mBtn2 = new MenuButton(".mbtn2", ".slider-main", "flex");
-const mBtn3 = new MenuButton(".mbtn3", ".content", "flex");
+const mBtn2 = new MenuButton(".mbtn2", ".services-container", "flex");
+const mBtn3 = new MenuButton(".mbtn3", ".gallery-container", "flex");
+const mBtn4 = new MenuButton(".mbtn4", ".contact-box", "flex");
 
-const buttons = [mBtn1, mBtn2, mBtn3];
+const buttons = [mBtn1, mBtn2, mBtn3, mBtn4];
 
 
 const ButtonON = (button) => {
     // change button css style
     button.button.style.cssText = `
         background-image: linear-gradient(126deg, rgba(27,174,112,1) 23%, rgba(60,60,60,1) 100%);
-            color: white;
+        color: white;
     `;
 
     // show button content
